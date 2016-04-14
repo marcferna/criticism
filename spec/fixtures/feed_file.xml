@@ -1,0 +1,110 @@
+<feed xmlns:im="http://itunes.apple.com/rss" xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>
+        https://itunes.apple.com/es/rss/customerreviews/id=528044963/sortBy=mostRecent/xml?l=en
+    </id>
+    <title>iTunes Store: Customer Reviews</title>
+    <updated>2016-04-13T22:51:42-07:00</updated>
+    <link rel="alternate" type="text/html" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=es&id=26103&l=en" />
+    <link rel="self" href="https://itunes.apple.com/es/rss/customerreviews/id=528044963/sortBy=mostRecent/xml?l=en" />
+    <link rel="first" href="https://itunes.apple.com/es/rss/customerreviews/page=1/id=528044963/sortby=mostrecent/xml?l=en&urlDesc=/customerreviews/id=528044963/sortBy=mostRecent/xml" />
+    <link rel="last" href="https://itunes.apple.com/es/rss/customerreviews/page=1/id=528044963/sortby=mostrecent/xml?l=en&urlDesc=/customerreviews/id=528044963/sortBy=mostRecent/xml" />
+    <link rel="previous" href="https://itunes.apple.com/es/rss/customerreviews/page=1/id=528044963/sortby=mostrecent/xml?l=en&urlDesc=/customerreviews/id=528044963/sortBy=mostRecent/xml" />
+    <link rel="next" href="https://itunes.apple.com/es/rss/customerreviews/page=2/id=528044963/sortby=mostrecent/xml?l=en&urlDesc=/customerreviews/id=528044963/sortBy=mostRecent/xml" />
+    <icon>http://itunes.apple.com/favicon.ico</icon>
+    <author>
+        <name>iTunes Store</name>
+        <uri>http://www.apple.com/uk/itunes/</uri>
+    </author>
+    <rights>Copyright 2008 Apple Inc.</rights>
+    <entry>
+        <updated>2016-04-13T22:51:42-07:00</updated>
+        <id im:id="528044963" im:bundleId="com.thanx.app">
+            https://itunes.apple.com/es/app/thanx/id528044963?l=en&mt=8&uo=2
+        </id>
+        <title>Thanx - Thanx</title>
+        <im:name>Thanx</im:name>
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/es/app/thanx/id528044963?l=en&mt=8&uo=2" />
+        <im:contentType term="Application" label="Application" />
+        <category im:id="6024" term="Shopping" scheme="https://itunes.apple.com/es/genre/ios-shopping/id6024?l=en&mt=8&uo=2" label="Shopping" />
+        <im:artist href="https://itunes.apple.com/es/developer/thanx/id528044966?l=en&mt=8&uo=2">Thanx</im:artist>
+        <im:price amount="0.00000" currency="EUR">Get</im:price>
+        <im:image height="53">
+            http://is5.mzstatic.com/image/thumb/Purple69/v4/47/7f/1f/477f1f46-1d44-677f-404a-9d19fa40eb23/mzl.zptpkyvt.png/53x53bb-85.png
+        </im:image>
+        <im:image height="75">
+            http://is4.mzstatic.com/image/thumb/Purple69/v4/47/7f/1f/477f1f46-1d44-677f-404a-9d19fa40eb23/mzl.zptpkyvt.png/75x75bb-85.png
+        </im:image>
+        <im:image height="100">
+            http://is5.mzstatic.com/image/thumb/Purple69/v4/47/7f/1f/477f1f46-1d44-677f-404a-9d19fa40eb23/mzl.zptpkyvt.png/100x100bb-85.png
+        </im:image>
+        <rights>© Thanx, Inc.</rights>
+        <im:releaseDate label="02 July 2012">2012-07-02T14:51:53-07:00</im:releaseDate>
+        <content type="html">
+            <table border="0" width="100%">
+                <tr>
+                    <td>
+                        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                            <tr valign="top" align="left">
+                                <td align="center" width="166" valign="top">
+                                    <a href="https://itunes.apple.com/es/app/thanx/id528044963?l=en&mt=8&uo=2"><img border="0" alt="Thanx - Thanx artwork" src="http://is5.mzstatic.com/image/thumb/Purple69/v4/47/7f/1f/477f1f46-1d44-677f-404a-9d19fa40eb23/mzl.zptpkyvt.png/100x100bb-85.png" /></a>
+                                </td>
+                                <td width="10"><img alt="" width="10" height="1" src="https://s.mzstatic.com/images/spacer.gif" /></td>
+                                <td width="95%"> <b><a href="https://itunes.apple.com/es/app/thanx/id528044963?l=en&mt=8&uo=2">Thanx</a></b>
+                                    <br/> <a href="https://itunes.apple.com/es/developer/thanx/id528044966?l=en&amp;mt=8&amp;uo=2">Thanx</a>
+                                    <font size="2" face="Helvetica,Arial,Geneva,Swiss,SunSans-Regular">
+                                        <br/> <b>Genre:</b> <a href="https://itunes.apple.com/es/genre/ios-shopping/id6024?l=en&mt=8&uo=2">Shopping</a>
+                                        <br/> <b>Release Date:</b> 02 July 2012 </font>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font size="2" face="Helvetica,Arial,Geneva,Swiss,SunSans-Regular"> &#169; © Thanx, Inc.</font>
+                    </td>
+                </tr>
+            </table>
+        </content>
+    </entry>
+    <entry>
+        <updated>2015-07-10T13:41:00-07:00</updated>
+        <id>1225207720</id>
+        <title>Muy buena app</title>
+        <content type="text">Perfecto!</content>
+        <im:contentType term="Application" label="Application" />
+        <im:voteSum>0</im:voteSum>
+        <im:voteCount>0</im:voteCount>
+        <im:rating>5</im:rating>
+        <im:version>3.0.0</im:version>
+        <author>
+            <name>Noiglobal</name>
+            <uri>
+                https://itunes.apple.com/es/reviews/id122565323?l=en
+            </uri>
+        </author>
+        <link rel="related" href="https://itunes.apple.com/es/review?id=528044963&l=en&type=Purple%20Software" />
+        <content type="html">
+            <table border="0" width="100%">
+                <tr>
+                    <td>
+                        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                            <tr valign="top" align="left">
+                                <td width="100%"> <b><a href="https://itunes.apple.com/es/app/thanx/id528044963?l=en&mt=8&uo=2">Muy buena app</a></b>
+                                    <br/>
+                                    <font size="2" face="Helvetica,Arial,Geneva,Swiss,SunSans-Regular"> </font>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font size="2" face="Helvetica,Arial,Geneva,Swiss,SunSans-Regular">
+                            <br/>Perfecto!</font>
+                        <br/> </td>
+                </tr>
+            </table>
+        </content>
+    </entry>
+</feed>
