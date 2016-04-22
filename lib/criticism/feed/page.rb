@@ -9,11 +9,11 @@ module Criticism
     end
 
     def previous
-      Feed::Page.new(@parser.previous_url)
+      @previous ||= Feed::Page.new(@parser.previous_url)
     end
 
     def next
-      Feed::Page.new(@parser.next_url)
+      @next ||= Feed::Page.new(@parser.next_url)
     end
   end
 end
