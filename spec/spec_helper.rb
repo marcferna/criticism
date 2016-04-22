@@ -4,7 +4,7 @@ require 'criticism'
 RSpec.configure do |config|
   config.before(:each) do
     allow_any_instance_of(Criticism::Feed).to receive(:url) {
-      "./spec/fixtures/feed_file.xml"
+      './spec/fixtures/feed_file.xml'
     }
   end
 end

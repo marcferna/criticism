@@ -1,9 +1,8 @@
 require 'spec_helper'
 
 describe Criticism::Feed::Page do
-
   describe '#new' do
-    let(:page) { Criticism::Feed::Page.new("./spec/fixtures/feed_file.xml") }
+    let(:page) { Criticism::Feed::Page.new('./spec/fixtures/feed_file.xml') }
 
     it 'sets the entries' do
       expect(page.entries).to_not be_nil

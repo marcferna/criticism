@@ -1,23 +1,24 @@
 require 'spec_helper'
 
 describe Criticism::Feed::Parser do
-
   describe '#new' do
-    let(:parser) { Criticism::Feed::Parser.new("./spec/fixtures/feed_file.xml") }
+    let(:parser) do
+      Criticism::Feed::Parser.new('./spec/fixtures/feed_file.xml')
+    end
 
     it 'sets the previous url' do
       expect(parser.previous_url).to eq(
-        "https://itunes.apple.com/us/rss/customerreviews/page=1/id=123456/"\
-        "sortby=mostrecent/xml?l=en=/customerreviews/id=123456/sortBy="\
-        "mostRecent/xml"
+        'https://itunes.apple.com/us/rss/customerreviews/page=1/id=123456/'\
+        'sortby=mostrecent/xml?l=en=/customerreviews/id=123456/sortBy='\
+        'mostRecent/xml'
       )
     end
 
     it 'sets the next url' do
       expect(parser.next_url).to eq(
-        "https://itunes.apple.com/us/rss/customerreviews/page=2/id=123456/"\
-        "sortby=mostrecent/xml?l=en=/customerreviews/id=123456/sortBy="\
-        "mostRecent/xml"
+        'https://itunes.apple.com/us/rss/customerreviews/page=2/id=123456/'\
+        'sortby=mostrecent/xml?l=en=/customerreviews/id=123456/sortBy='\
+        'mostRecent/xml'
       )
     end
 

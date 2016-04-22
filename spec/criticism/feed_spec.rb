@@ -1,9 +1,8 @@
 require 'spec_helper'
 
 describe Criticism::Feed do
-
   describe '#new' do
-    let(:app_id) { 1234567 }
+    let(:app_id) { 1_234_567 }
     let(:country) { 'es' }
     let(:language) { 'it' }
 
