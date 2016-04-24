@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'bundler'
+gem 'coveralls', require: false
 
 group :development do
   gem 'pry'
