@@ -12,7 +12,6 @@ group :test do
   gem 'rspec', '>= 3.1.0'
   gem 'rubocop', '>= 0.27'
   gem 'simplecov', '>= 0.9'
-  gem "codeclimate-test-reporter"
 end
 
 # Specify your gem's dependencies in criticism.gemspec
