@@ -1,6 +1,14 @@
 require 'coveralls'
 Coveralls.wear!('rails')
 
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
+  [
+    Coveralls::SimpleCov::Formatter,
+    SimpleCov::Formatter::HTMLFormatter
+  ]
+)
+SimpleCov.start 'rails'
+
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'criticism'
 

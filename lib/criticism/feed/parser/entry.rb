@@ -23,10 +23,14 @@ module Criticism
 
         def parse_title
           @entry_xml.xpath('./title').first.content
+        rescue
+          ''
         end
 
         def parse_review
-          @entry_xml.xpath('./content').first.content
+          @entry_xml.xpath("./content[@type='text']").first.content
+        rescue
+          ''
         end
 
         def parse_rating

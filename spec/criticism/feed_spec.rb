@@ -64,6 +64,33 @@ describe Criticism::Feed do
           )
         end
       end
+
+      context 'url' do
+        before do
+          allow_any_instance_of(
+            Criticism::Feed
+          ).to receive(:url).and_call_original
+
+          allow_any_instance_of(Criticism::Feed::Parser).to receive(:open) {
+            open('./spec/fixtures/feed_file.xml')
+          }
+        end
+
+        let(:feed) do
+          Criticism::Feed.new(
+            app_id:   app_id,
+            country:  country,
+            language: language
+          )
+        end
+
+        it 'returns iTunes feed url' do
+          expect(feed.send(:url)).to eq(
+            "https://itunes.apple.com/#{country}/rss/customerreviews/"\
+            "id=#{app_id}/sortBy=mostRecent/xml?l=#{language}"
+          )
+        end
+      end
     end
   end
 end

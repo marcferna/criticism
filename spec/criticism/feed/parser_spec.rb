@@ -58,6 +58,30 @@ describe Criticism::Feed::Parser do
           expect(first_entry.author.uri).to eq('https://itunes.apple.com/us/reviews/id12345')
         end
       end
+
+      context 'invalid entry content' do
+        let(:parser) do
+          Criticism::Feed::Parser.new('./spec/fixtures/invalid_feed_file.xml')
+        end
+
+        context 'invalid title parsing' do
+          it 'returns empty string' do
+            expect(first_entry.title).to eq('')
+          end
+        end
+
+        context 'invalid review parsing' do
+          it 'returns empty string' do
+            expect(first_entry.review).to eq('')
+          end
+        end
+
+        context 'invalid rating parsing' do
+          it 'returns empty string' do
+            expect(first_entry.rating).to eq('')
+          end
+        end
+      end
     end
   end
 end
