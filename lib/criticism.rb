@@ -10,6 +10,12 @@ require 'criticism/ios/feed/parser/page'
 require 'criticism/ios/feed/parser/review'
 require 'criticism/ios/feed/parser/author'
 
+require 'criticism/android'
+require 'criticism/android/cloud'
+require 'criticism/android/credentials'
+require 'criticism/android/cloud/file'
+require 'criticism/android/cloud/file/row'
+
 module Criticism
   # Your code goes here...
 end
