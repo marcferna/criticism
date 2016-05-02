@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Criticism::Feed do
+describe Criticism::Ios::Feed do
   describe '#new' do
     let(:app_id) { 1_234_567 }
     let(:country) { 'es' }
@@ -10,7 +10,7 @@ describe Criticism::Feed do
       context 'all arguments present' do
         it 'sets app_id attribute' do
           expect(
-            Criticism::Feed.new(
+            Criticism::Ios::Feed.new(
               app_id:   app_id,
               country:  country,
               language: language
@@ -22,7 +22,7 @@ describe Criticism::Feed do
 
         it 'sets country attribute' do
           expect(
-            Criticism::Feed.new(
+            Criticism::Ios::Feed.new(
               app_id:   app_id,
               country:  country,
               language: language
@@ -34,7 +34,7 @@ describe Criticism::Feed do
 
         it 'sets language attribute' do
           expect(
-            Criticism::Feed.new(
+            Criticism::Ios::Feed.new(
               app_id:   app_id,
               country:  country,
               language: language
@@ -48,7 +48,7 @@ describe Criticism::Feed do
       context 'language argument missing' do
         it 'sets default language attribute' do
           expect(
-            Criticism::Feed.new(app_id: app_id, country: country).language
+            Criticism::Ios::Feed.new(app_id: app_id, country: country).language
           ).to eq(
             'en'
           )
@@ -58,7 +58,7 @@ describe Criticism::Feed do
       context 'country argument missing' do
         it 'sets default language attribute' do
           expect(
-            Criticism::Feed.new(app_id: app_id, language: language).country
+            Criticism::Ios::Feed.new(app_id: app_id, language: language).country
           ).to eq(
             'us'
           )
@@ -68,16 +68,18 @@ describe Criticism::Feed do
       context 'url' do
         before do
           allow_any_instance_of(
-            Criticism::Feed
+            Criticism::Ios::Feed
           ).to receive(:url).and_call_original
 
-          allow_any_instance_of(Criticism::Feed::Parser).to receive(:open) {
+          allow_any_instance_of(
+            Criticism::Ios::Feed::Parser
+          ).to receive(:open) {
             open('./spec/fixtures/feed_file.xml')
           }
         end
 
         let(:feed) do
-          Criticism::Feed.new(
+          Criticism::Ios::Feed.new(
             app_id:   app_id,
             country:  country,
             language: language

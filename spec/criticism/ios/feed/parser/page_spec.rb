@@ -1,9 +1,11 @@
 require 'spec_helper'
 
-describe Criticism::Feed::Parser do
+describe Criticism::Ios::Feed::Parser::Page do
   describe '#new' do
     let(:parser) do
-      Criticism::Feed::Parser.new('./spec/fixtures/feed_file.xml')
+      Criticism::Ios::Feed::Parser::Page.new(
+        './spec/fixtures/ios/feed_file.xml'
+      )
     end
 
     it 'sets the previous url' do
@@ -61,7 +63,9 @@ describe Criticism::Feed::Parser do
 
       context 'invalid entry content' do
         let(:parser) do
-          Criticism::Feed::Parser.new('./spec/fixtures/invalid_feed_file.xml')
+          Criticism::Ios::Feed::Parser::Page.new(
+            './spec/fixtures/ios/invalid_feed_file.xml'
+          )
         end
 
         context 'invalid title parsing' do
