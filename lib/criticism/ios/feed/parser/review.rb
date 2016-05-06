@@ -19,7 +19,7 @@ module Criticism
             Criticism::Review.new(
               id:      id,
               title:   title,
-              review:  review_text,
+              text:    review_text,
               rating:  rating,
               version: version
             )

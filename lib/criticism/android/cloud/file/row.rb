@@ -10,7 +10,7 @@ module Criticism
             @review = Criticism::Review.new(
               id:      id,
               title:   row[:review_title],
-              review:  row[:review_text],
+              text:    row[:review_text],
               rating:  row[:star_rating],
               version: row[:app_version_name]
             )

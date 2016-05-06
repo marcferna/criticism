@@ -31,7 +31,7 @@ describe Criticism::Android do
     it { expect(android.reviews.count).to be(8) }
 
     it 'returns only the reviews' do
-      expect(android.reviews.map(&:review).count).to be(8)
+      expect(android.reviews.map(&:text).compact.count).to be(8)
     end
   end
 

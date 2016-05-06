@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Criticism::Android::Cloud::File do
+describe Criticism::Android::Cloud::File::Row do
   let(:headers) do
     [
       :package_name,
@@ -71,8 +71,8 @@ describe Criticism::Android::Cloud::File do
       expect(review.title).to eq(title)
     end
 
-    it 'sets the review' do
-      expect(review.review).to eq(text)
+    it 'sets the text' do
+      expect(review.text).to eq(text)
     end
 
     it 'sets the rating' do

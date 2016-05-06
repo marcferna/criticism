@@ -17,7 +17,7 @@ describe Criticism::Android::Cloud::File do
     it { expect(file.reviews.count).to be(8) }
 
     it 'returns only the reviews' do
-      expect(file.reviews.map(&:review).count).to be(8)
+      expect(file.reviews.map(&:text).compact.count).to be(8)
     end
   end
 end

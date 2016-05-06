@@ -38,8 +38,8 @@ describe Criticism::Ios::Feed::Parser::Page do
         expect(first_entry.title).to eq('Awesome app')
       end
 
-      it 'parses the review' do
-        expect(first_entry.review).to eq(
+      it 'parses the text' do
+        expect(first_entry.text).to eq(
           "Great app, add online ordering to the mix and I'll give it 5 stars"
         )
       end
@@ -74,9 +74,9 @@ describe Criticism::Ios::Feed::Parser::Page do
           end
         end
 
-        context 'invalid review parsing' do
+        context 'invalid text parsing' do
           it 'returns empty string' do
-            expect(first_entry.review).to eq('')
+            expect(first_entry.text).to eq('')
           end
         end
 
